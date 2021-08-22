@@ -4,7 +4,7 @@
   - The code implementation is straightforward.
 
 - [Zhang, Dejiao, et al. "Supporting Clustering with Contrastive Learning." *Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL).* (2021).](https://arxiv.org/pdf/2103.12953.pdf)
-  - Applied in text data. **SCCL ** = DEC + Contrastive Learning.
+  - Applied in text data. **SCCL** = DEC + Contrastive Learning.
 
 - [Li, Yunfan, et al. "Contrastive clustering." *2021 AAAI Conference on Artificial Intelligence (AAAI)*. 2021.](https://www.aaai.org/AAAI21Papers/AAAI-1352.LiY.pdf)
   - **CC** = Contrastive Learning (instance-level contrastive head) + PICA (cluster-level contrastive head). it takes 1000epochs to train each dataset.
