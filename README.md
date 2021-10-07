@@ -1,8 +1,7 @@
 # Papers in Deep Clustering
 
 - [Tsai, Tsung Wei, Chongxuan Li, and Jun Zhu. "MiCE: Mixture of Contrastive Experts for Unsupervised Image Clustering." *International Conference on Learning Representations (ICLR)*. 2021.](https://openreview.net/pdf?id=gV3wdEOGy_V)
-  - **MiCE** (Mixture of Contrastive Experts) can be seen as the discriminative model for instance discrimination with latent variable, where the EM algorithm is used to solve then nontrivial inference problem. The whole training procedure is basically same with that of MoE. As for the loss function, MiCE introduce the dot product between the instances and the cluster prototypes for the experts, encouraging a clear cluster structure around the prototype. However, the training epochs are too  large to be accepted, for example, it takes 6000 epochs to train STL-10 and 3000 epochs to train ImageNet-Dog. Also, it might be challenging when training datasets with excessive clusters (e.g., Tiny-ImageNet with 200 clusters). 
-  - The code implementation is straightforward.
+  - **MiCE** (Mixture of Contrastive Experts) can be seen as the discriminative model for instance discrimination with latent variable, where the EM algorithm is used to solve then nontrivial inference problem. The whole training procedure is basically same with that of MoE. As for the loss function, MiCE introduce the dot product between the instances and the cluster prototypes for the experts, encouraging a clear cluster structure around the prototype. However, the training epochs are too  large to be accepted, for example, it takes 6000 epochs to train STL-10 and 3000 epochs to train ImageNet-Dog. Also, it might be challenging when training datasets with excessive clusters (e.g., Tiny-ImageNet with 200 clusters).
 - [ Do, Kien, Truyen Tran, and Svetha Venkatesh. "Clustering by Maximizing Mutual Information Across Views." *arXiv preprint arXiv:2107.11635 (ICCV) * (2021). ](https://arxiv.org/pdf/2107.11635.pdf)
   - **CRLC**
 - [Zhang, Dejiao, et al. "Supporting Clustering with Contrastive Learning." *Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL).* (2021).](https://arxiv.org/pdf/2103.12953.pdf)
@@ -11,7 +10,6 @@
   - = DEC in graph data  + Contrastive Learning
 - [Li, Yunfan, et al. "Contrastive clustering." *2021 AAAI Conference on Artificial Intelligence (AAAI)*. 2021.](https://www.aaai.org/AAAI21Papers/AAAI-1352.LiY.pdf)
   - **CC** = Contrastive Learning (instance-level contrastive head) + PICA (cluster-level contrastive head). it takes 1000epochs to train each dataset.
-  - The code implementation is simple.
 - [Bo, Deyu, et al. "Structural deep clustering network." *Proceedings of The Web Conference 2020 (WWW)*. 2020.](https://dl.acm.org/doi/pdf/10.1145/3366423.3380214?casa_token=htTAxhfH6xkAAAAA:k_Smn2T5LsruzuW4gbdgqEP-BEXBBAbLSCnBwK2ciTKiOSY2sYqiHgHkq2yjCjengkHkS8DF3wuv)
   - **SDCN** = DEC with the GNN structure.
 - [Huang, Jiabo, Shaogang Gong, and Xiatian Zhu. "Deep semantic clustering by partition confidence maximisation." *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*. 2020.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Huang_Deep_Semantic_Clustering_by_Partition_Confidence_Maximisation_CVPR_2020_paper.pdf)
