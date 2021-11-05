@@ -1,10 +1,12 @@
-# Papers in Deep Clustering
+## Papers in Deep Clustering
+
+- [ Shen, Yuming, et al. "You Never Cluster Alone." *Conference and Workshop on Neural Information Processing Systems (NIPS)*. 2021. ](https://arxiv.org/pdf/2106.01908.pdf)
 
 - [Tsai, Tsung Wei, Chongxuan Li, and Jun Zhu. "MiCE: Mixture of Contrastive Experts for Unsupervised Image Clustering." *International Conference on Learning Representations (ICLR)*. 2021.](https://openreview.net/pdf?id=gV3wdEOGy_V)
   - **MiCE** (Mixture of Contrastive Experts) can be seen as the discriminative model for instance discrimination with latent variable, where the EM algorithm is used to solve then nontrivial inference problem. The whole training procedure is basically same with that of MoE. As for the loss function, MiCE introduce the dot product between the instances and the cluster prototypes for the experts, encouraging a clear cluster structure around the prototype. However, the training epochs are too  large to be accepted, for example, it takes 6000 epochs to train STL-10 and 3000 epochs to train ImageNet-Dog. Also, it might be challenging when training datasets with excessive clusters (e.g., Tiny-ImageNet with 200 clusters).
-- [ Do, Kien, Truyen Tran, and Svetha Venkatesh. "Clustering by Maximizing Mutual Information Across Views." *arXiv preprint arXiv:2107.11635 (ICCV) * (2021). ](https://arxiv.org/pdf/2107.11635.pdf)
+- [ Do, Kien, Truyen Tran, and Svetha Venkatesh. "Clustering by Maximizing Mutual Information Across Views." *ICCV.* 2021. ](https://arxiv.org/pdf/2107.11635.pdf)
   - **CRLC**
-- [Zhang, Dejiao, et al. "Supporting Clustering with Contrastive Learning." *Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL).* (2021).](https://arxiv.org/pdf/2103.12953.pdf)
+- [Zhang, Dejiao, et al. "Supporting Clustering with Contrastive Learning." *Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL).* 2021.](https://arxiv.org/pdf/2103.12953.pdf)
   - Applied in text data. **SCCL** = DEC + Contrastive Learning.
 - [ Zhao, Han, et al. "Graph Debiased Contrastive Learning with Joint Representation Clustering.“ *IJCAI*. 2021.  ](https://www.ijcai.org/proceedings/2021/0473.pdf)
   - = DEC in graph data  + Contrastive Learning
